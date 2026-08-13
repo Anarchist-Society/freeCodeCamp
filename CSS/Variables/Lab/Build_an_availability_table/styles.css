@@ -2,13 +2,13 @@
 :root {
   font-size: 16px;
 
-  --bg-color: #fdf6e3;       /* Fondo crema */
-  --color0: hsl(192, 20%, 100%);  /* Blanco (sin disponibilidad) */
+  --bg-color: #fdf6e3; /* Fondo crema */
+  --color0: hsl(192, 20%, 100%); /* Blanco (sin disponibilidad) */
   --color1: hsl(192, 50%, 85%);
   --color2: hsl(192, 60%, 65%);
   --color3: hsl(192, 70%, 45%);
   --color4: hsl(192, 80%, 25%);
-  --color5: hsl(192, 100%, 12%);  /* Cian muy oscuro (máxima) */
+  --color5: hsl(192, 100%, 12%); /* Cian muy oscuro (máxima) */
 
   --solid-border: 0.1rem solid black;
   --dashed-border: 0.1rem dashed black;
@@ -23,7 +23,7 @@
 body {
   background-color: var(--bg-color);
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
 }
 
 main {
@@ -79,12 +79,24 @@ tbody :last-child td {
 }
 
 /* Clases de disponibilidad: 0 a 5, usando variables */
-.available-0 { background-color: var(--color0); }
-.available-1 { background-color: var(--color1); }
-.available-2 { background-color: var(--color2); }
-.available-3 { background-color: var(--color3); }
-.available-4 { background-color: var(--color4); }
-.available-5 { background-color: var(--color5); }
+.available-0 {
+  background-color: var(--color0);
+}
+.available-1 {
+  background-color: var(--color1);
+}
+.available-2 {
+  background-color: var(--color2);
+}
+.available-3 {
+  background-color: var(--color3);
+}
+.available-4 {
+  background-color: var(--color4);
+}
+.available-5 {
+  background-color: var(--color5);
+}
 
 /* Leyenda: barra de gradiente */
 #legend {
@@ -123,3 +135,4 @@ tbody :last-child td {
     var(--color5) 83% 100%
   );
 }
+
