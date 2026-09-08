@@ -9,5 +9,3 @@ def build_acronym(s):
             s += word[0].upper()
 
     return s
-
-print(build_acronym("For your information"))
