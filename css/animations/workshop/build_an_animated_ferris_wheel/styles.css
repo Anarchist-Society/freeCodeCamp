@@ -64,29 +64,15 @@ main {
 
 /* @keyframes: la rueda gira de 0 a 360° */
 @keyframes wheel {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* @keyframes: cabinas contrarrotan y cambian de color */
 @keyframes cabins {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    background-color: yellow;
-  }
-  50% {
-    background-color: purple;
-  }
-  75% {
-    background-color: yellow;
-  }
-  100% {
-    transform: rotate(-360deg); /* Gira en dirección opuesta */
-  }
+  0% { transform: rotate(0deg); }
+  25% { background-color: yellow; }
+  50% { background-color: purple; }
+  75% { background-color: yellow; }
+  100% { transform: rotate(-360deg); } /* Gira en dirección opuesta */
 }
