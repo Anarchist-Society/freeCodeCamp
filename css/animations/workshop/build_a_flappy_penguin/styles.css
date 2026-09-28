@@ -89,8 +89,12 @@ body {
   top: 15%;
 }
 
-.face.left { left: 5%; }
-.face.right { right: 5%; }
+.face.left {
+  left: 5%;
+}
+.face.right {
+  right: 5%;
+}
 
 /* Barbilla */
 .chin {
@@ -111,8 +115,12 @@ body {
   border-radius: 50%;
 }
 
-.eye.left { left: 25%; }
-.eye.right { right: 25%; }
+.eye.left {
+  left: 25%;
+}
+.eye.right {
+  right: 25%;
+}
 
 /* Párpado: cubre parcialmente el ojo */
 .eye-lid {
@@ -133,8 +141,12 @@ body {
   border-radius: 50%;
 }
 
-.blush.left { left: 15%; }
-.blush.right { right: 15%; }
+.blush.left {
+  left: 15%;
+}
+.blush.right {
+  right: 15%;
+}
 
 /* Pico */
 .beak {
@@ -143,12 +155,22 @@ body {
   border-radius: 50%;
 }
 
-.beak.top { width: 20%; top: 60%; left: 40%; }
-.beak.bottom { width: 16%; top: 65%; left: 42%; }
+.beak.top {
+  width: 20%;
+  top: 60%;
+  left: 40%;
+}
+.beak.bottom {
+  width: 16%;
+  top: 65%;
+  left: 42%;
+}
 
 /* Camiseta con texto */
 .shirt {
-  font: bold 25px Helvetica, sans-serif;
+  font:
+    bold 25px Helvetica,
+    sans-serif;
   top: 165px;
   left: 127.5px;
   z-index: 1;
@@ -166,10 +188,10 @@ body {
   width: 53%;
   height: 45%;
   background: linear-gradient(
-  180deg,
-  rgb(134, 133, 133) 0%,
-  rgb(234, 231, 231) 25%,
-  white 67%
+    180deg,
+    rgb(134, 133, 133) 0%,
+    rgb(234, 231, 231) 25%,
+    white 67%
   );
   border-radius: 80% 80% 100% 100%;
   top: 40%;

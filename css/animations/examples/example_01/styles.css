@@ -1,7 +1,11 @@
 /* @keyframes: define una animación llamada "slide-in" */
 @keyframes slide-in {
-  0% { transform: translateX(-100%); } /* Inicia fuera a la izquierda */
-  100% { transform: translateX(0); } /* Termina en su posición original */
+  0% {
+    transform: translateX(-100%);
+  } /* Inicia fuera a la izquierda */
+  100% {
+    transform: translateX(0);
+  } /* Termina en su posición original */
 }
 
 .sliding-element {
@@ -23,9 +27,15 @@
 
 /* @keyframes: cambio de color de rojo a azul a verde */
 @keyframes color-change {
-  0% { background-color: red; }
-  50% { background-color: blue; }
-  100% { background-color: green; }
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
 }
 
 /* Transición: cambio suave al hacer hover */
