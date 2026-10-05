@@ -10,3 +10,11 @@ main {
   display: grid; /* Grid para centrar contenido */
   place-items: center; /* Centra horizontal y verticalmente */
 }
+
+svg {
+  transition: transform 0.2s;
+}
+
+svg:hover {
+  transform: scale(1.5);
+}
