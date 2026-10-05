@@ -2,3 +2,9 @@ img {
   max-width: 100%; /* Evita desbordar el contenedor */
   height: auto; /* Mantiene proporción */
 }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px;
+}
