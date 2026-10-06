@@ -1,0 +1,56 @@
+body {
+  background-color: #fefefe; /* Casi blanco */
+  margin: 40px; /* Espacio alrededor del body */
+  line-height: 1.6; /* Interlineado para legibilidad */
+  color: #333; /* Texto gris oscuro */
+}
+
+/* Tarjeta centrada, máximo 600px */
+.card {
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  background: #ffffff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris sutil */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 30px; /* Espacio interno */
+  box-shadow: 0 4 10px rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+}
+
+/* Título principal: grande, oscuro, negrita */
+.headline {
+  font-size: 32px; /* Tamaño grande */
+  color: #2c3e50; /* Azul oscuro */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 10px; /* Espacio debajo */
+}
+
+/* Subtítulo: mediano, gris */
+.subheadline {
+  font-size: 20px; /* Tamaño mediano */
+  color: #555; /* Gris medio */
+  margin-bottom: 20px; /* Espacio debajo */
+}
+
+/* Texto descriptivo: normal, gris más claro */
+.body-text {
+  font-size: 16px; /* Tamaño normal */
+  color: #666; /* Gris claro */
+  margin-bottom: 20px; /* Espacio debajo */
+}
+
+/* Botón CTA: azul con transición */
+.call-to-action {
+  display: inline-block; /* Permite padding en línea */
+  background-color: #3498db; /* Azul */
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  padding: 12px 24px; /* Espacio interno */
+  border-radius: 5px; /* Esquinas redondeadas */
+  font-weight: bold; /* Negrita */
+  transition: background 0.3s ease; /* Animación suave */
+}
+
+/* Hover: azul más oscuro */
+.call-to-action:hover {
+  background-color: #2980b9; /* Azul oscuro */
+}
