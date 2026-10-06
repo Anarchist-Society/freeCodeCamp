@@ -121,7 +121,8 @@ textarea {
 .submit-btn {
   cursor: pointer; /* Cursor de mano */
   background-color: royalblue; /* Azul real */
-  color: whitesmoke; /* Texto claro */
+  color: white; /* Texto claro */
+  font-weight: bold;
   border: none; /* Sin borde */
   border-radius: 6px; /* Esquinas redondeadas */
   padding: 12px 20px; /* Espacio interno */
