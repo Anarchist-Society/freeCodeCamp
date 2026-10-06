@@ -9,6 +9,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+h1 {
+  font-size: 1.6rem;
+}
+
 /* Tarjeta del post */
 .blog-post-card {
   max-width: 100%; /* Adaptativa en móvil */
@@ -43,7 +47,7 @@ body {
 /* Extracto */
 .post-excerpt {
   color: #1c3c3a; /* Verde oscuro */
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 /* Botón "Read More" */
@@ -55,6 +59,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease-out;
 }
 
 /* Hover: cambio sutil de color */
