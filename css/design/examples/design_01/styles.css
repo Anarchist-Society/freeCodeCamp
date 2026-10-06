@@ -80,7 +80,10 @@ nav a {
 /* Grid responsive */
 .product-grid {
   display: grid; /* Layout grid */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Columnas responsive: mín 240px */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  ); /* Columnas responsive: mín 240px */
   gap: 2rem; /* Espacio entre tarjetas */
 }
 
@@ -108,7 +111,7 @@ nav a {
 /* Botón "Add to Cart" */
 .product-card button {
   background-color: #27ae60; /* Verde acción */
-  color: white; /* Texto blanco */
+  color: black;
   border: none; /* Sin borde */
   padding: 0.5rem 1rem; /* Espacio interno */
   cursor: pointer; /* Cursor de mano */

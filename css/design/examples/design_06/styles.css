@@ -1,14 +1,14 @@
 body {
   margin: 0; /* Sin márgenes externos */
   padding: 0; /* Sin rellenos internos */
-  background-color: #F0F0F0; /* Gris claro */
+  background-color: #f0f0f0; /* Gris claro */
 }
 
 /* Contenedor CON white space: padding generoso */
 .container {
   max-width: 800px; /* Ancho máximo */
   margin: 60px auto; /* Centra horizontalmente con espacio arriba/abajo */
-  background-color: #FFFFFF; /* Fondo blanco */
+  background-color: #ffffff; /* Fondo blanco */
   padding: 60px; /* Mucho espacio interno (white space) */
   border-radius: 10px; /* Esquinas redondeadas */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
@@ -18,7 +18,7 @@ body {
 h1 {
   font-size: 36px; /* Tamaño grande */
   margin-bottom: 20px; /* Espacio debajo */
-  color: #2C3E50; /* Azul oscuro */
+  color: #2c3e50; /* Azul oscuro */
 }
 
 /* Párrafos */
@@ -33,8 +33,8 @@ p {
 .button {
   display: inline-block; /* Permite padding en línea */
   padding: 14px 28px; /* Espacio interno generoso */
-  background-color: #27AE60; /* Verde */
-  color: white; /* Texto blanco */
+  background-color: #27ae60; /* Verde */
+  color: black;
   font-size: 16px; /* Tamaño normal */
   font-weight: bold; /* Negrita */
   border: none; /* Sin borde */
@@ -50,11 +50,11 @@ p {
 
 /* Contenedor SIN white space: poco padding, apretado */
 .no-whitespace {
-  background-color: #FFFFFF; /* Fondo blanco */
+  background-color: #ffffff; /* Fondo blanco */
   padding: 10px; /* Poco espacio interno (apretado) */
   margin: 60px auto; /* Centra horizontalmente */
   width: 800px; /* Ancho fijo (no responsive) */
-  box-shadow: 0 0 0 1px #CCC; /* Borde sutil con box-shadow */
+  box-shadow: 0 0 0 1px #ccc; /* Borde sutil con box-shadow */
   font-size: 16px; /* Tamaño normal */
   color: #222; /* Casi negro */
 }

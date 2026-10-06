@@ -26,7 +26,8 @@ function showStep(index) {
 // Botones "Next": avanzan al siguiente paso
 form.querySelectorAll(".next-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (currentStep < totalSteps - 1) { // Si no es el último paso
+    if (currentStep < totalSteps - 1) {
+      // Si no es el último paso
       currentStep++; // Avanza
       showStep(currentStep); // Muestra el nuevo paso
     }
@@ -36,7 +37,8 @@ form.querySelectorAll(".next-btn").forEach((btn) => {
 // Botones "Previous": retroceden al paso anterior
 form.querySelectorAll(".prev-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (currentStep > 0) { // Si no es el primer paso
+    if (currentStep > 0) {
+      // Si no es el primer paso
       currentStep--; // Retrocede
       showStep(currentStep); // Muestra el paso anterior
     }

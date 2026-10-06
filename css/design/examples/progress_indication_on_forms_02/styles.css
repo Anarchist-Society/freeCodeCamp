@@ -113,7 +113,8 @@ input[type="email"]:focus {
 button {
   background-color: #4caf50; /* Verde */
   border: none; /* Sin borde */
-  color: white; /* Texto blanco */
+  color: black;
+  font-weight: bold;
   padding: 10px 18px; /* Espacio interno */
   font-size: 1em; /* Tamaño heredado */
   border-radius: 5px; /* Esquinas redondeadas */

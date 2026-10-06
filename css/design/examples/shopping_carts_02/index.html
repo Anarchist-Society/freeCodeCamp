@@ -5,54 +5,56 @@
     <!-- Viewport para móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Anarchist-Society" />
-    <meta name="description" content="Ejercicios de FreeCodeCamp" />
+    <meta name="description" content="Ejemplo de FreeCodeCamp" />
     <title>Shopping cart</title>
     <!-- CSS externo -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Carrito de compras completo -->
-    <div class="shopping-cart">
-      <!-- Título del carrito -->
-      <h2>Your Cart</h2>
+    <main>
+      <!-- Carrito de compras completo -->
+      <div class="shopping-cart">
+        <!-- Título del carrito -->
+        <h2>Your Cart</h2>
 
-      <!-- Lista de artículos -->
-      <ul class="cart-items">
-        <!-- Artículo 1: T-shirt -->
-        <li class="cart-item">
-          <!-- Nombre del producto -->
-          <span class="item-name">T-shirt</span>
-          <!--
+        <!-- Lista de artículos -->
+        <ul class="cart-items">
+          <!-- Artículo 1: T-shirt -->
+          <li class="cart-item">
+            <!-- Nombre del producto -->
+            <span class="item-name">T-shirt</span>
+            <!--
             Input numérico para cantidad.
             min="1": Mínimo 1 unidad.
             value="2": Cantidad inicial.
             aria-label: Texto para lectores de pantalla.
           -->
-          <input
-            type="number"
-            min="1"
-            value="2"
-            class="quantity-input"
-            aria-label="Quantity for T-Shirt"
-          />
-          <!-- Botón para eliminar artículo -->
-          <button class="remove-btn">Remove</button>
-        </li>
+            <input
+              type="number"
+              min="1"
+              value="2"
+              class="quantity-input"
+              aria-label="Quantity for T-Shirt"
+            />
+            <!-- Botón para eliminar artículo -->
+            <button class="remove-btn">Remove</button>
+          </li>
 
-        <!-- Artículo 2: Hat -->
-        <li class="cart-item">
-          <span class="item-name">Hat</span>
-          <input
-            type="number"
-            min="1"
-            value="1"
-            class="quantity-input"
-            aria-label="Quantity for Hat"
-          />
-          <button class="remove-btn">Remove</button>
-        </li>
-      </ul>
-    </div>
+          <!-- Artículo 2: Hat -->
+          <li class="cart-item">
+            <span class="item-name">Hat</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity-input"
+              aria-label="Quantity for Hat"
+            />
+            <button class="remove-btn">Remove</button>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>

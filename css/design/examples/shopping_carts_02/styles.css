@@ -54,7 +54,8 @@
 .remove-btn {
   background: #e74c3c; /* Rojo */
   border: none; /* Sin borde */
-  color: white; /* Texto blanco */
+  color: black;
+  font-weight: bold;
   padding: 6px 12px; /* Espacio interno */
   border-radius: 4px; /* Esquinas redondeadas */
   font-size: 0.9rem; /* Tamaño un poco menor */
