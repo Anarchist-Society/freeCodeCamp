@@ -116,7 +116,8 @@ button {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   background-color: #1e90ff; /* Azul */
-  color: #fff; /* Texto blanco */
+  color: #000;
+  font-weight: bold;
   border: none; /* Sin borde */
   border-radius: 4px; /* Esquinas redondeadas */
   cursor: pointer; /* Mano al pasar */
