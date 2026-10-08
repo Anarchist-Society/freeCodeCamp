@@ -57,11 +57,16 @@ body {
   top: -50px;
 }
 
-/* Corazones 4 y 5 (columna izquierda): subir 97px para alinear */
 .seven div:nth-child(4),
 .seven div:nth-child(5) {
+  width: 50%;
   position: relative;
-  top: -97px;
+  top: -100px;
+}
+
+.seven div:nth-child(5) {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right {
@@ -75,4 +80,15 @@ body {
 /* Voltea cada elemento 180° */
 .flipped {
   transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 740px;
+  }
+
+  .middle {
+    font-size: 8rem;
+  }
 }

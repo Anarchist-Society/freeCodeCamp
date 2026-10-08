@@ -7,12 +7,7 @@
 body {
   background-color: thistle;
   min-height: 100dvh;
-}
-
-.red {
-}
-
-.flipped {
+  font-size: 16px;
 }
 
 #playing-cards {
@@ -31,16 +26,39 @@ body {
   min-width: 250px;
   max-width: 250px;
   height: 350px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .left {
+  align-self: flex-start;
 }
 
 .middle {
+  align-self: center;
+  display: flex;
+  font-size: 5rem;
+  flex-direction: column;
 }
 
 .right {
+  align-self: flex-end;
 }
 
 .middle-section {
+  display: flex;
+  justify-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.flipped {
+  transform: rotate(180deg);
 }

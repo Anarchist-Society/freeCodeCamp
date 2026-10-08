@@ -58,3 +58,14 @@ body {
 .flipped {
   transform: rotate(180deg); /* Voltea cada elemento 180° */
 }
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 740px;
+  }
+
+  .middle {
+    font-size: 8rem;
+  }
+}

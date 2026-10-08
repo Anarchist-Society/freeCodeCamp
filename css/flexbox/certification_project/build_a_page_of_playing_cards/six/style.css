@@ -37,16 +37,22 @@ body {
 
 .middle {
   font-size: 10rem;
-  align-self: center; /* Centrada verticalmente */
+}
+
+.six div {
+  width: 50%;
 }
 
 /* 6 corazones: 2 columnas × 3 filas */
 .six {
-  display: flex;
-  justify-content: space-between; /* Espacia columnas */
-  align-content: space-between; /* Espacia filas */
   flex-wrap: wrap; /* Salto de línea al 3er y 4to corazón */
+  align-content: space-between;
   height: 100%; /* Ocupa todo el alto de .card */
+}
+
+div {
+  display: flex;
+  justify-content: center;
 }
 
 .right {
@@ -60,4 +66,15 @@ body {
 /* Voltea cada elemento 180° */
 .flipped {
   transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 740px;
+  }
+
+  .middle {
+    font-size: 8rem;
+  }
 }

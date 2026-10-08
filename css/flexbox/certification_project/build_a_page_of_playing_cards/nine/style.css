@@ -43,27 +43,41 @@ body {
 /* 9 corazones: layout complejo con position:relative */
 .nine {
   display: flex;
-  flex-wrap: wrap; /* Salto de línea */
-  justify-content: space-between;
+  flex-wrap: wrap;
   height: 100%;
+}
+
+.nine > div {
+  width: 50%;
+}
+
+.nine div:nth-child(2),
+.nine div:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Corazón central (5to): ancho completo + subir 90px */
 .nine div:nth-child(5) {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
   position: relative;
-  top: -90px;
+  top: -100px;
 }
 
-/* Corazones columna izquierda (6-9): subir 183px */
 .nine div:nth-child(6),
 .nine div:nth-child(7),
 .nine div:nth-child(8),
 .nine div:nth-child(9) {
   position: relative;
-  top: -183px;
+  top: -185px;
+}
+
+.nine div:nth-child(6),
+.nine div:nth-child(8) {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right {
@@ -77,4 +91,15 @@ body {
 /* Voltea cada elemento 180° */
 .flipped {
   transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 740px;
+  }
+
+  .middle {
+    font-size: 8rem;
+  }
 }

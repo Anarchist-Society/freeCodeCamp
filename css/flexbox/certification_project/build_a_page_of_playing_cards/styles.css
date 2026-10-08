@@ -263,3 +263,6 @@ body {
   position: relative;
   top: -36%;
 }
+
+@media (max-width: 600px) {
+}

@@ -49,11 +49,16 @@ body {
   width: 100%; /* Ocupa todo el ancho disponible */
 }
 
-/* Corazones 1 y 2: bajar 190px */
 .ten div:nth-child(1),
 .ten div:nth-child(2) {
+  width: 50%;
   position: relative;
   top: 190px;
+}
+
+.ten div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Corazón central superior (3ro): ancho completo + bajar 100px */
@@ -62,30 +67,47 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 100px;
+  top: 120px;
 }
 
 /* Corazones 4 y 5: ajuste mínimo */
 .ten div:nth-child(4),
 .ten div:nth-child(5) {
+  width: 50%;
   position: relative;
-  top: -6px;
+  top: 30px;
 }
 
-/* Corazón central inferior (8vo): ancho completo + subir 100px */
-.ten div:nth-child(8) {
+.ten div:nth-child(5) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ten div:nth-child(6) {
   width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
-  top: -100px;
+  top: 100px;
 }
 
-/* Corazones 9 y 10: subir 183px */
+.ten div:nth-child(7),
+.ten div:nth-child(8) {
+  position: relative;
+  top: -180px;
+}
+
 .ten div:nth-child(9),
 .ten div:nth-child(10) {
+  width: 50%;
+  display: flex;
   position: relative;
-  top: -183px;
+  top: -200px;
+}
+
+.ten div:nth-child(9) {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .right {
@@ -99,4 +121,15 @@ body {
 /* Voltea cada elemento 180° */
 .flipped {
   transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 740px;
+  }
+
+  .middle {
+    font-size: 8rem;
+  }
 }
