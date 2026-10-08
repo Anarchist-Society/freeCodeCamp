@@ -10,22 +10,20 @@ main {
   place-items: center;
 }
 
-/* Rueda: círculo con borde, tamaño responsive */
 .wheel {
   border: 2px solid black;
-  border-radius: 50%; /* Círculo perfecto */
+  border-radius: 50%;
   position: absolute;
   height: 55vw;
   width: 55vw;
   max-width: 500px;
   max-height: 500px;
   animation-name: wheel;
-  animation-duration: 10s; /* Una vuelta completa en 10s */
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; /* Velocidad constante */
+  animation-timing-function: linear;
 }
 
-/* Radio (spoke): línea desde el centro */
 .line {
   background-color: red;
   width: 50%;
@@ -33,10 +31,9 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: 0% 0%; /* Gira desde el centro de la rueda */
+  transform-origin: 0% 0%;
 }
 
-/* Cada radio rota 60° más que el anterior */
 .line:nth-of-type(2) {
   transform: rotate(60deg);
 }
@@ -53,18 +50,16 @@ main {
   transform: rotate(300deg);
 }
 
-/* Cabina: cuadrado posicionado alrededor de la rueda */
 .cabin {
   background-color: red;
   width: 20%;
   height: 20%;
   position: absolute;
   border: 2px solid;
-  transform-origin: 50% 0%; /* Gira desde arriba */
-  animation: cabins 10s ease-in-out infinite; /* Contrarota para mantenerse vertical */
+  transform-origin: 50% 0%;
+  animation: cabins 10s ease-in-out infinite;
 }
 
-/* Posiciones de las 6 cabinas (en el borde de la rueda) */
 .cabin:nth-of-type(1) {
   right: -8.5%;
   top: 50%;
@@ -90,7 +85,6 @@ main {
   top: 7%;
 }
 
-/* @keyframes: la rueda gira de 0 a 360° */
 @keyframes wheel {
   0% {
     transform: rotate(0deg);
@@ -100,7 +94,6 @@ main {
   }
 }
 
-/* @keyframes: cabinas contrarrotan y cambian de color */
 @keyframes cabins {
   0% {
     transform: rotate(0deg);
@@ -116,5 +109,5 @@ main {
   }
   100% {
     transform: rotate(-360deg);
-  } /* Gira en dirección opuesta */
+  }
 }

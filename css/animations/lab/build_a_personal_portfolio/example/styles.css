@@ -9,13 +9,11 @@
   --gradient-dark: #181719;
 }
 
-/* Base reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* box-sizing and font sizing */
 *,
 *::before,
 *::after {
@@ -25,53 +23,33 @@
 html {
   box-sizing: border-box;
 
-  /* Set font size for easy rem calculations
-   * default document font size = 16 px, 1rem = 16 px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-   */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * it will affect all properties using rem units for the values.
- */
 
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em */
 
-/* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
     font-size: 60%;
   }
 }
 
-/* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
     font-size: 58%;
   }
 }
 
-/* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
   }
 }
 
-/* Base styles */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
-  /* 18 px */
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
@@ -107,7 +85,6 @@ img {
   height: auto;
 }
 
-/* Keyboard focus — the :hover styles below are invisible without this */
 a:focus-visible {
   outline: 0.3rem solid var(--main-white);
   outline-offset: 0.2rem;
@@ -117,7 +94,6 @@ a:focus-visible {
   outline-offset: -0.3rem;
 }
 
-/* nav */
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -146,7 +122,6 @@ a:focus-visible {
   background-color: var(--main-blue);
 }
 
-/* Welcome section */
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -169,7 +144,6 @@ a:focus-visible {
   color: var(--main-red);
 }
 
-/* Projects section */
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
@@ -183,7 +157,6 @@ a:focus-visible {
   border-bottom: 0.2rem solid var(--main-white);
 }
 
-/* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -248,7 +221,6 @@ a:focus-visible {
   transition: transform 0.3s ease-out;
 }
 
-/* Contact section */
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -289,7 +261,6 @@ a:focus-visible {
   transform: translateY(8px);
 }
 
-/* Footer */
 footer {
   font-weight: 300;
   display: flex;
@@ -307,9 +278,7 @@ footer i {
   vertical-align: middle;
 }
 
-/* Responsive: all breakpoints together, widest first */
 
-/* 490px / 16px = 30.625em */
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 6rem 1rem;
@@ -320,7 +289,6 @@ footer i {
   }
 }
 
-/* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
@@ -344,7 +312,6 @@ footer i {
   }
 }
 
-/* Respect the OS "reduce motion" setting */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

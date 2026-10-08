@@ -1,7 +1,6 @@
-/* Variables CSS: colores del pingüino */
 :root {
   --penguin-face: white;
-  --penguin-picorna: orange; /* Pico y pies */
+  --penguin-picorna: orange;
   --penguin-skin: gray;
 }
 
@@ -14,7 +13,6 @@ body {
   overflow: hidden;
 }
 
-/* Montaña izquierda: forma con skew */
 .left-mountain {
   width: 300px;
   height: 300px;
@@ -25,7 +23,6 @@ body {
   margin-top: 100px;
 }
 
-/* Montaña trasera: forma con rotate */
 .back-mountain {
   width: 300px;
   height: 300px;
@@ -37,7 +34,6 @@ body {
   top: 225px;
 }
 
-/* Sol: círculo amarillo */
 .sun {
   width: 200px;
   height: 200px;
@@ -48,7 +44,6 @@ body {
   right: -75px;
 }
 
-/* Pingüino: contenedor principal */
 .penguin {
   width: 300px;
   height: 300px;
@@ -63,13 +58,11 @@ body {
   position: absolute;
 }
 
-/* Efecto de click: agranda el pingüino */
 .penguin:active {
   transform: scale(1.5);
   cursor: not-allowed;
 }
 
-/* Cabeza: gradiente gris-blanco */
 .penguin-head {
   width: 50%;
   height: 45%;
@@ -80,7 +73,6 @@ body {
   z-index: 1;
 }
 
-/* Cara: oval blanco */
 .face {
   width: 60%;
   height: 70%;
@@ -96,7 +88,6 @@ body {
   right: 5%;
 }
 
-/* Barbilla */
 .chin {
   width: 90%;
   height: 70%;
@@ -106,7 +97,6 @@ body {
   border-radius: 70% 70% 100% 100%;
 }
 
-/* Ojos: círculos negros */
 .eye {
   width: 15%;
   height: 17%;
@@ -122,7 +112,6 @@ body {
   right: 25%;
 }
 
-/* Párpado: cubre parcialmente el ojo */
 .eye-lid {
   width: 150%;
   height: 100%;
@@ -132,7 +121,6 @@ body {
   border-radius: 50%;
 }
 
-/* Mejillas: rosa */
 .blush {
   width: 15%;
   height: 10%;
@@ -148,7 +136,6 @@ body {
   right: 15%;
 }
 
-/* Pico */
 .beak {
   height: 10%;
   background-color: var(--penguin-picorna);
@@ -166,7 +153,6 @@ body {
   left: 42%;
 }
 
-/* Camiseta con texto */
 .shirt {
   font:
     bold 25px Helvetica,
@@ -183,7 +169,6 @@ body {
   left: 12px;
 }
 
-/* Cuerpo: gradiente de gris a blanco */
 .penguin-body {
   width: 53%;
   height: 45%;
@@ -198,7 +183,6 @@ body {
   left: 23.5%;
 }
 
-/* Parche semitransparente en el cuerpo */
 .penguin-body::before {
   content: "";
   position: absolute;
@@ -211,7 +195,6 @@ body {
   opacity: 70%;
 }
 
-/* Brazos */
 .arm {
   width: 30%;
   height: 60%;
@@ -220,7 +203,6 @@ body {
   z-index: -1;
 }
 
-/* Brazo izquierdo: animación de saludar */
 .arm.left {
   top: 35%;
   left: 5%;
@@ -235,7 +217,6 @@ body {
   transform: rotate(-45deg);
 }
 
-/* @keyframes: animación de saludar con el brazo */
 @keyframes wave {
   10% {
     transform: rotate(110deg) scaleX(-1);
@@ -251,7 +232,6 @@ body {
   }
 }
 
-/* Pies: ovalaran naranjas */
 .foot {
   width: 15%;
   height: 30%;
@@ -271,7 +251,6 @@ body {
   transform: rotate(-80deg);
 }
 
-/* Suelo: gradiente de cielo */
 .ground {
   width: 100vw;
   height: calc(100vh - 300px);
