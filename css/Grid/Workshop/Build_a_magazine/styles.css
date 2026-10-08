@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px para facilitar cálculos */
+  font-size: 62.5%;
 }
 
 body {
@@ -29,7 +29,6 @@ a {
   color: linen;
 }
 
-/* Grid outer: 3 columnas (margen | contenido | margen) */
 main {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
@@ -46,7 +45,6 @@ hr {
   border: 1px solid rgba(120, 120, 120, 0.6);
 }
 
-/* Sección hero: 2 columnas internas */
 .heading {
   grid-column: 2 / 3;
   display: grid;
@@ -63,7 +61,7 @@ hr {
 }
 
 .hero {
-  grid-column: 1 / -1; /* Ocupa todas las columnas */
+  grid-column: 1 / -1;
   position: relative;
 }
 
@@ -92,7 +90,6 @@ hr {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Redes sociales: 5 columnas */
 .social-icons {
   display: grid;
   font-size: 3rem;
@@ -102,7 +99,6 @@ hr {
   align-items: center;
 }
 
-/* Primera letra del párrafo: capital letter */
 .first-paragraph::first-letter {
   font-size: 6rem;
   color: orangered;
@@ -125,7 +121,6 @@ hr {
   content: ' "';
 }
 
-/* Sección con imágenes: 2 columnas (texto | imágenes) */
 .text-with-images {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -147,7 +142,6 @@ hr {
   color: #00beef;
 }
 
-/* Wrapper de imágenes: 2 columnas (imagen grande | imagen pequeña) */
 .image-wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -156,27 +150,23 @@ hr {
   place-items: center;
 }
 
-/* Imágenes 1 y 3: span todas las columnas */
 .image-1,
 .image-3 {
   grid-column: 1 / -1;
 }
 
-/* Responsive: imágenes en 1 columna */
 @media only screen and (max-width: 720px) {
   .image-wrapper {
     grid-template-columns: 1fr;
   }
 }
 
-/* Responsive: texto+imágenes en 1 columna */
 @media only screen and (max-width: 600px) {
   .text-with-images {
     grid-template-columns: 1fr;
   }
 }
 
-/* Responsive: reducir tamaños de fuente */
 @media only screen and (max-width: 550px) {
   .hero-title {
     font-size: 6rem;

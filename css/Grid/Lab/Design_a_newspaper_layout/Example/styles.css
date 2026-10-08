@@ -1,4 +1,3 @@
-/* Variables CSS: colores del periódico */
 :root {
   --bg-color: #f0f0f0;
   --bg-color-title: #1b1b32;
@@ -20,7 +19,6 @@ body {
   background-color: var(--bg-color);
 }
 
-/* Layout con grid-template-areas: define zonas con nombres */
 .newspaper-layout {
   display: grid;
   grid-template-areas:
