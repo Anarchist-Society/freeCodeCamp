@@ -21,6 +21,12 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .established {
   font-style: italic; /* Texto en cursiva */
   margin-bottom: 5%;
