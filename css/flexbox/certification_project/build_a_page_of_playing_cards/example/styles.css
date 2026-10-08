@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: thistle;
+  min-height: 100dvh;
+}
+
+.red {
+}
+
+.flipped {
+}
+
+#playing-cards {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray;
+  min-width: 250px;
+  max-width: 250px;
+  height: 350px;
+}
+
+.left {
+}
+
+.middle {
+}
+
+.right {
+}
+
+.middle-section {
+}
