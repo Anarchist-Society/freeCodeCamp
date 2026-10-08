@@ -13,9 +13,6 @@ body {
   height: 100dvh;
 }
 
-main {
-}
-
 .label {
   border: 2px solid black;
   width: 270px;
@@ -105,4 +102,3 @@ p {
   padding: 0 8px;
   text-indent: -8px;
 }
-
