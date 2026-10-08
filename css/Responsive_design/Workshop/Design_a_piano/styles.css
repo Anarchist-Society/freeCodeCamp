@@ -4,12 +4,11 @@
 }
 
 html {
-  box-sizing: border-box; /* Padding y border dentro del ancho */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Hereda box-sizing de html */
 *,
 *::before,
 *::after {
@@ -19,16 +18,16 @@ html {
 main {
   height: 100vh;
   display: grid;
-  place-items: center; /* Centra el piano */
+  place-items: center;
 }
 
 #piano {
   background-color: #00471b;
-  width: 992px; /* Ancho fijo del piano */
+  width: 992px;
   height: 290px;
   margin: 80px auto;
   padding: 90px 20px 0 20px;
-  position: relative; /* Para posicionar el logo encima */
+  position: relative;
   border-radius: 10px;
 }
 
@@ -37,7 +36,7 @@ main {
   width: 949px;
   height: 180px;
   padding-left: 2px;
-  overflow: hidden; /* Oculta teclas que desbordan */
+  overflow: hidden;
 }
 
 .key {
@@ -46,16 +45,15 @@ main {
   width: 41px;
   height: 175px;
   margin: 2px;
-  float: left; /* Teclas blancas en fila */
-  border-radius: 0 0 3px 3px; /* Redondea abajo */
+  float: left;
+  border-radius: 0 0 3px 3px;
 }
 
-/* Pseudo-elemento ::after para la tecla negra */
 .key.black--key::after {
   background-color: #1d1e22;
   content: "";
   position: absolute;
-  left: -18px; /* Se superpone a la tecla blanca anterior */
+  left: -18px;
   width: 32px;
   height: 100px;
   border-radius: 0 0 3px 3px;
@@ -63,11 +61,10 @@ main {
 
 .logo {
   width: 200px;
-  position: absolute; /* Se superpone sobre las teclas */
+  position: absolute;
   top: 23px;
 }
 
-/* Pantallas pequeñas: piano más angosto */
 @media (max-width: 768px) {
   #piano {
     width: 358px;
@@ -82,7 +79,6 @@ main {
   }
 }
 
-/* Pantallas medianas */
 @media (max-width: 769px) and (min-width: 1199px) {
   #piano {
     width: 675px;
