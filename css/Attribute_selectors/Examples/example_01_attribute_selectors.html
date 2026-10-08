@@ -5,40 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attribute Selector</title>
     <style>
-      /* Todos los enlaces: bloque */
       a {
         display: block;
       }
 
-      /* [href]: Selector por presencia de atributo href */
       a[href] {
         color: blue;
         text-decoration: underline;
       }
 
-      /* [title]: Solo enlaces con atributo title */
       a[title] {
         font-weight: bold;
         text-decoration: none;
       }
 
-      /* [href][title]: Combinación de dos atributos */
       a[href][title] {
         display: block;
         color: green;
       }
 
-      /* [class~="primary"]: Selector de valor (contiene "primary" como palabra) */
       a[class~="primary"] {
         color: red;
         font-weight: bold;
       }
 
-      /* [href^="https://"]: Empieza con "https://" */
-      /* a[href^="https://"] { color: green; } */
 
-      /* [href$=".com"]: Termina con ".com" */
-      /* a[href$=".com"] { color: darkgreen; } */
     </style>
   </head>
 
