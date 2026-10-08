@@ -1,53 +1,47 @@
 * {
-  margin: 0; /* Sin márgenes externos */
-  padding: 0; /* Sin rellenos internos */
-  box-sizing: border-box; /* Width/height incluye padding y border */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-  height: 100dvh; /* Altura dinámica del viewport */
+  height: 100dvh;
   display: grid;
-  place-items: center; /* Centra la tarjeta */
+  place-items: center;
 }
 
 body {
-  background-color: #0000a6; /* Azul oscuro */
+  background-color: #0000a6;
   font-family: Arial, sans-serif;
 }
 
-/* Tarjeta de presentación */
 .business-card {
   width: 300px;
   padding: 20px;
-  border: 5px solid #ffd600; /* Borde amarillo */
-  background-color: #56ffff; /* Fondo cyan */
+  border: 5px solid #ffd600;
+  background-color: #56ffff;
   text-align: center;
   font-size: 16px;
 }
 
-/* Foto de perfil: responsive */
 .profile-image {
   max-width: 100%;
 }
 
-/* Párrafos: 10px arriba/abajo, 0 lados */
 p {
   margin: 10px 0;
 }
 
-/* Enlaces: sin subrayado */
 a {
   text-decoration: none;
 }
 
-/* Líneas horizontales: espacio alrededor */
 hr {
   margin: 5px;
 }
 
-/* Redes sociales: flexbox horizontal con gap */
 .social-links {
   display: flex;
-  gap: 15px; /* Espacio solo entre enlaces */
+  gap: 15px;
   justify-content: center;
 }

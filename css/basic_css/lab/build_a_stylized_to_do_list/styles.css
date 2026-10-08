@@ -1,9 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #002944; /* Azul oscuro */
+  background-color: #002944;
 }
 
-/* Centrado horizontal con margin, sin grid */
 main {
   width: 80%;
   max-width: 540px;
@@ -11,12 +10,11 @@ main {
   padding: 50px 20px;
 }
 
-/* Contenedor de la lista */
 .container {
   background-color: #002944;
   padding: 20px;
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra negra opaca */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 h1 {
@@ -24,29 +22,25 @@ h1 {
   color: white;
 }
 
-/* Solo "To-Do" en azul */
 span {
   color: #1d92d0;
 }
 
-/* Lista de tareas: sin puntos ni sangría */
 .todo-list {
   list-style-type: none;
   padding: 0;
 }
 
-/* Cada tarea */
 .todo-list li {
   margin-bottom: 15px;
-  line-height: 1.6; /* Interlineado amplio */
+  line-height: 1.6;
   padding: 10px;
-  background-color: #0a3d5e; /* Azul más claro */
+  background-color: #0a3d5e;
   border-radius: 10px;
   position: relative;
-  color: #e0f0ff; /* Texto azul claro */
+  color: #e0f0ff;
 }
 
-/* Enlaces de sublistas */
 a.sub-item-link {
   text-decoration: none;
 }
@@ -57,15 +51,14 @@ a.sub-item-link {
 
 .sub-item-link:visited {
   color: #b3daff;
-  font-weight: bold; /* Negrita al visitar */
+  font-weight: bold;
 }
 
 .sub-item-link:hover {
   color: #ffffff;
-  background-color: rgba(29, 146, 208, 0.2); /* Fondo azul semitransparente */
+  background-color: rgba(29, 146, 208, 0.2);
 }
 
-/* Focus: Borde azul para accesibilidad */
 .sub-item-link:focus {
   outline: 2px solid #4da8ff;
   outline-offset: 2px;
@@ -75,7 +68,6 @@ a.sub-item-link {
   color: white;
 }
 
-/* Sublistas: cuadros en lugar de puntos */
 .sub-item {
   list-style: square;
 }

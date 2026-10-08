@@ -1,14 +1,14 @@
 * {
-  margin: 0; /* Sin márgenes externos */
-  padding: 0; /* Sin rellenos internos */
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  height: 100dvh; /* Altura dinámica del viewport */
+  height: 100dvh;
   display: grid;
-  place-items: center; /* Centra horizontal y verticalmente */
+  place-items: center;
 }
 
 h1 {
@@ -28,45 +28,40 @@ h3 {
 }
 
 .established {
-  font-style: italic; /* Texto en cursiva */
+  font-style: italic;
   margin-bottom: 5%;
 }
 
 h1,
 h2,
 p {
-  text-align: center; /* Centra texto horizontalmente */
+  text-align: center;
 }
 
-/* Contenedor principal del menú */
 .menu {
-  width: 80%; /* Ocupa 80% del viewport */
+  width: 80%;
   background-color: burlywood;
   padding: 20px;
-  max-width: 500px; /* Límite máximo de ancho */
+  max-width: 500px;
 }
 
-/* Imágenes: display: block elimina espacio fantasma debajo */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Línea horizontal */
 hr {
   height: 2px;
   background-color: brown;
   border-color: brown;
 }
 
-/* hr antes del footer */
 .bottom-line {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-/* Fuente de títulos */
 h1,
 h2 {
   font-family: Impact, serif;
@@ -76,7 +71,6 @@ h2 {
   margin-top: 2%;
 }
 
-/* Precio y nombre en la misma línea */
 .item p {
   display: inline-block;
   margin-top: 5px;
@@ -84,30 +78,25 @@ h2 {
   font-size: 18px;
 }
 
-/* Nombre del plato: 70% del ancho */
 .flavor,
 .dessert {
   text-align: left;
   width: 70%;
 }
 
-/* Precio: 20% del ancho */
 .price {
   text-align: right;
   width: 20%;
 }
 
-/* Pie de página */
 footer {
   font-size: 14px;
 }
 
-/* Dirección: sin cursiva (por defecto <address> es italic) */
 address {
   font-style: normal;
 }
 
-/* Espacio entre enlace y dirección */
 address p:first-child {
   margin-bottom: 15px;
 }
@@ -116,7 +105,6 @@ address p:first-child {
   margin-bottom: 5px;
 }
 
-/* Estilos de enlaces */
 a {
   color: black;
 }
