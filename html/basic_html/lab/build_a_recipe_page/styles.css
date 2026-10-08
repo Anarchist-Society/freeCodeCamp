@@ -1,4 +1,4 @@
 img {
-  max-width: 100%; /* Evita scroll horizontal */
-  height: auto; /* Mantiene proporción original */
+  max-width: 100%;
+  height: auto;
 }

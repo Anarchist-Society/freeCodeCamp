@@ -1,14 +1,14 @@
 * {
-  margin: 0; /* Sin márgenes externos */
-  padding: 0; /* Sin rellenos internos */
-  box-sizing: border-box; /* Padding y border incluidos en el ancho total */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-  height: 100dvh; /* Altura dinámica del viewport (ajusta a la barra real del navegador) */
+  height: 100dvh;
   background-color: black;
-  display: grid; /* Grid para centrar contenido */
-  place-items: center; /* Centra horizontal y verticalmente */
+  display: grid;
+  place-items: center;
 }
 
 svg {
