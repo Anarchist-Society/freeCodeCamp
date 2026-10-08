@@ -5,11 +5,11 @@
 }
 
 html {
-  font-size: 10px; /* 1rem = 10px para cálculos fáciles */
+  font-size: 10px;
 }
 
 body {
-  background-color: #000000; /* Fondo negro */
+  background-color: #000000;
   color: #ffffff;
   font-family: "Courier New", Courier, monospace;
   font-size: 1.6rem;
@@ -20,7 +20,6 @@ body {
   padding: 20px;
 }
 
-/* Contenedor principal: borde cian, sombra cian */
 #main {
   max-width: 1300px;
   margin: 30px auto;
@@ -38,7 +37,6 @@ body {
   }
 }
 
-/* Título: cian, grande, con text-shadow */
 #title {
   color: #00ffff;
   font-size: 5rem;
@@ -47,7 +45,6 @@ body {
   text-shadow: 0 0 3px #00ffff;
 }
 
-/* Subtítulo */
 main > p {
   text-align: center;
   font-size: 2rem;
@@ -62,7 +59,6 @@ main > p {
   }
 }
 
-/* Figura: fondo oscuro */
 #img-div {
   text-align: center;
   background: white;
@@ -70,7 +66,6 @@ main > p {
   background-color: #111111;
 }
 
-/* Imagen: responsive, borde cian */
 #image {
   max-width: 100%;
   height: auto;
@@ -80,7 +75,6 @@ main > p {
   box-shadow: 0 0 20px #00ffff;
 }
 
-/* Caption: cursiva */
 #img-caption {
   margin-top: 15px;
   font-size: 1.5rem;
@@ -93,7 +87,6 @@ main > p {
   }
 }
 
-/* Timeline */
 #tribute-info {
   margin-top: 40px;
 }
@@ -104,7 +97,6 @@ main > p {
   text-align: center;
 }
 
-/* Lista de eventos: sin viñetas, con arrow personalizado */
 ul {
   max-width: 550px;
   margin: 0 auto 50px auto;
@@ -114,19 +106,18 @@ ul {
 }
 
 li strong {
-  color: #ffff55; /* Amarillo para fechas */
+  color: #ffff55;
 }
 
 li::before {
   content: "►";
-  color: #55ff55; /* Verde para arrows */
+  color: #55ff55;
 }
 
 li {
   margin: 16px 0;
 }
 
-/* Cita: borde amarillo, sombra sutil */
 blockquote {
   background-color: #000000;
   border-left: 8px solid #ffff55;
@@ -142,14 +133,12 @@ cite {
   color: #00ffff;
 }
 
-/* Enlace Wikipedia: amarillo, sin subrayado */
 #tribute-link {
   color: #ffff55;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-/* Hover: fondo amarillo, texto negro */
 #tribute-link:hover {
   color: #000000;
   background-color: #ffff55;
