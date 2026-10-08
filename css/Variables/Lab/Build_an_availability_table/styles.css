@@ -1,14 +1,13 @@
-/* Variables CSS: colores de disponibilidad (tonos de cian) */
 :root {
   font-size: 16px;
 
-  --bg-color: #fdf6e3; /* Fondo crema */
-  --color0: hsl(192, 20%, 100%); /* Blanco (sin disponibilidad) */
+  --bg-color: #fdf6e3;
+  --color0: hsl(192, 20%, 100%);
   --color1: hsl(192, 50%, 85%);
   --color2: hsl(192, 60%, 65%);
   --color3: hsl(192, 70%, 45%);
   --color4: hsl(192, 80%, 25%);
-  --color5: hsl(192, 100%, 12%); /* Cian muy oscuro (máxima) */
+  --color5: hsl(192, 100%, 12%);
 
   --solid-border: 0.1rem solid black;
   --dashed-border: 0.1rem dashed black;
@@ -37,7 +36,7 @@ main {
 
 table {
   border-collapse: collapse;
-  table-layout: fixed; /* Ancho fijo, no crece con contenido */
+  table-layout: fixed;
   width: 32rem;
 }
 
@@ -54,7 +53,6 @@ td {
   border-right: var(--solid-border);
 }
 
-/* Fila sharp: borde sólido inferior */
 .sharp th:not([class*="time"]) {
   border-bottom: var(--solid-border);
 }
@@ -63,12 +61,10 @@ td {
   border-bottom: var(--solid-border);
 }
 
-/* Fila half: borde discontinuo inferior */
 .half td {
   border-bottom: var(--dashed-border);
 }
 
-/* Última fila: sin borde */
 tbody :last-child td {
   border: none;
 }
@@ -78,7 +74,6 @@ tbody :last-child td {
   padding: 0.4rem;
 }
 
-/* Clases de disponibilidad: 0 a 5, usando variables */
 .available-0 {
   background-color: var(--color0);
 }
@@ -98,7 +93,6 @@ tbody :last-child td {
   background-color: var(--color5);
 }
 
-/* Leyenda: barra de gradiente */
 #legend {
   display: flex;
   flex-direction: column;
@@ -124,7 +118,6 @@ tbody :last-child td {
   width: 100%;
   height: 60%;
   border: var(--solid-border);
-  /* Gradiente de 6 colores: cada color ocupa ~16.6% */
   background-image: linear-gradient(
     90deg,
     var(--color0) 0% 17%,
