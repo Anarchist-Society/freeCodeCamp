@@ -1,37 +1,32 @@
-/* Base: todos los divs tienen el mismo tamaño */
 div {
-  width: 80px; /* Ancho fijo */
-  height: 50px; /* Alto fijo */
+  width: 80px;
+  height: 50px;
 }
 
-/* Ejemplo 1: Flex normal — los hijos se reducen para caber */
 .box1 {
-  width: 200px; /* Ancho del contenedor */
-  display: flex; /* Activa flexbox */
-  border: 2px solid red; /* Borde rojo para visualizar */
+  width: 200px;
+  display: flex;
+  border: 2px solid red;
 }
 
-/* Ejemplo 2: flex-wrap: wrap — los hijos saltan a nueva fila */
 .box2 {
   width: 200px;
   display: flex;
-  flex-wrap: wrap; /* Permite saltos de línea */
+  flex-wrap: wrap;
   border: 2px solid red;
-  margin-bottom: 70px; /* Espacio para el wrap */
+  margin-bottom: 70px;
 }
 
-/* Ejemplo 3: flex-flow — shorthand de direction + wrap */
 .box3 {
   width: 200px;
   display: flex;
-  flex-flow: column wrap-reverse; /* Columna + wrap reverso */
+  flex-flow: column wrap-reverse;
   border: 2px solid red;
 }
 
-/* Colores de los hijos */
-#div1 { background-color: #4d70b2; } /* Azul */
-#div2 { background-color: #5c4db2; } /* Púrpura */
-#div3 { background-color: #4da3b2; } /* Cian */
+#div1 { background-color: #4d70b2; }
+#div2 { background-color: #5c4db2; }
+#div3 { background-color: #4da3b2; }
 #div4 { background-color: #4d70b2; }
 #div5 { background-color: #5c4db2; }
 #div6 { background-color: #4da3b2; }

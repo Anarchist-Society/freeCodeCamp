@@ -1,37 +1,33 @@
 * {
-  margin: 0; /* Sin márgenes externos */
-  padding: 0; /* Sin rellenos internos */
-  box-sizing: border-box; /* Padding y border dentro del ancho */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Grid de 40 cartas: 10 columnas × 4 filas */
 body {
-  background-color: #0f5132; /* Verde mesa de póker */
-  min-height: 100vh; /* Altura completa del viewport */
+  background-color: #0f5132;
+  min-height: 100vh;
 }
 
 .red {
-  color: red; /* Color rojo para corazones/diamantes */
+  color: red;
 }
 
-/* Voltea cada elemento 180° */
 .flipped {
   transform: rotate(180deg);
 }
 
-/* Grid principal: 10 columnas de 250px */
 #playing-cards {
   display: grid;
-  grid-template-columns: repeat(10, 250px); /* 10 columnas */
-  grid-template-areas: repeat(4, 350px); /* 4 filas */
-  gap: 20px; /* Espacio entre cartas */
-  padding: 20px; /* Espacio alrededor */
+  grid-template-columns: repeat(10, 250px);
+  grid-template-areas: repeat(4, 350px);
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Carta base: flexbox con 3 columnas */
 .card {
   display: flex;
-  justify-content: space-between; /* left a la izq, middle centro, right a la der */
+  justify-content: space-between;
   min-width: 250px;
   max-width: 250px;
   height: 350px;
@@ -45,23 +41,19 @@ body {
   text-align: center;
 }
 
-/* Columna izquierda: esquina superior */
 .left {
   align-self: flex-start;
 }
 
-/* Columna central: centrada verticalmente */
 .middle {
   font-size: 4rem;
   align-self: center;
 }
 
-/* Columna derecha: esquina inferior */
 .card .right {
   align-self: flex-end;
 }
 
-/* 2 corazones: columna vertical con space-between */
 .two {
   display: flex;
   flex-direction: column;
@@ -69,7 +61,6 @@ body {
   height: 100%;
 }
 
-/* 4 corazones: cuadrícula 2×2 con wrap */
 .four {
   height: 100%;
   width: 100%;
@@ -78,11 +69,10 @@ body {
 }
 
 .four > div {
-  width: 50%; /* Mitad de ancho para 2 columnas */
-  height: 50%; /* Mitad de alto para 2 filas */
+  width: 50%;
+  height: 50%;
 }
 
-/* 5 corazones: 2+1+2 con wrap */
 .five {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +80,6 @@ body {
   height: 100%;
 }
 
-/* Corazón central (3ro): ancho completo */
 .five div:nth-child(3) {
   width: 100%;
   display: flex;
@@ -98,7 +87,6 @@ body {
   align-items: center;
 }
 
-/* 6 corazones: 2 columnas × 3 filas */
 .six {
   height: 100%;
   display: flex;
@@ -107,10 +95,9 @@ body {
 }
 
 .six > div {
-  width: 50%; /* Mitad de ancho */
+  width: 50%;
 }
 
-/* Corazones centrales (3 y 4): centrados */
 .six div:nth-child(3),
 .six div:nth-child(4) {
   display: flex;
@@ -118,7 +105,6 @@ body {
   justify-content: center;
 }
 
-/* 7 corazones: 2+1+2+2 con position:relative */
 .seven {
   display: flex;
   height: 100%;
@@ -130,7 +116,6 @@ body {
   width: 50%;
 }
 
-/* Corazón central (3ro): ancho completo, subir 20px */
 .seven div:nth-child(3) {
   width: 100%;
   display: flex;
@@ -140,14 +125,12 @@ body {
   top: -20px;
 }
 
-/* Corazones 4 y 5: subir 40px */
 .seven div:nth-child(4),
 .seven div:nth-child(5) {
   position: relative;
   top: -40px;
 }
 
-/* 8 corazones: layout complejo con position:relative */
 .eight {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +147,6 @@ body {
   top: -12px;
 }
 
-/* Corazones 3 y 6: ancho completo */
 .eight div:nth-child(3),
 .eight div:nth-child(6) {
   width: 100%;
@@ -190,7 +172,6 @@ body {
   top: -13%;
 }
 
-/* 9 corazones: layout complejo */
 .nine {
   display: flex;
   flex-wrap: wrap;
@@ -198,7 +179,6 @@ body {
   justify-content: space-between;
 }
 
-/* Corazón central (5to): ancho completo */
 .nine div:nth-child(5) {
   width: 100%;
   position: relative;
@@ -221,7 +201,6 @@ body {
   top: -13%;
 }
 
-/* 10 corazones: layout más complejo */
 .ten {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +230,6 @@ body {
   top: -13%;
 }
 
-/* Corazón central inferior (8vo): ancho completo */
 .ten div:nth-child(8) {
   width: 100%;
   position: relative;
