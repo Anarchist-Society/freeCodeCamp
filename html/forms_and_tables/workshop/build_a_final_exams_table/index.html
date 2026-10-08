@@ -10,18 +10,11 @@
 
   <body>
     <main>
-      <!--
-        <table>: Tabla de datos (NO para diseño, usar CSS Grid/Flexbox).
-        Estructura: caption → thead → tbody → tfoot.
-        - <tr>: Fila. - <th>: Celda de encabezado (negrita+centrada). - <td>: Celda de datos.
-      -->
       <table>
-        <!-- <caption>: Título de la tabla (obligatorio para accesibilidad) -->
         <caption>
           Calculus Final Exam Grades
         </caption>
 
-        <!-- <thead>: Filas de encabezado (columnas) -->
         <thead>
           <tr>
             <th>Last Name</th>
@@ -30,7 +23,6 @@
           </tr>
         </thead>
 
-        <!-- <tbody>: Filas con datos principales -->
         <tbody>
           <tr>
             <td>Davis</td>
@@ -63,10 +55,8 @@
           </tr>
         </tbody>
 
-        <!-- <tfoot>: Pie de tabla (totales, promedios) -->
         <tfoot>
           <tr>
-            <!-- colspan="2": Une 2 columnas en una celda -->
             <td colspan="2">Average Grade</td>
             <td>78.8</td>
           </tr>
