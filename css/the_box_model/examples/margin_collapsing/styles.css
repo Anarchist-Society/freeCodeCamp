@@ -1,27 +1,15 @@
-/* Ejemplo 1: Colapso entre hermanos */
-/*
-  box1 margin-bottom: 20px
-  box2 margin-top: 30px
-  Resultado: Solo se aplica el mayor (30px).
-*/
 
 .box1 {
-  margin-bottom: 20px; /* Margen inferior */
+  margin-bottom: 20px;
   background-color: lightblue;
 }
 
 .box2 {
-  margin-top: 30px; /* Margen superior (colapsa con box1) */
+  margin-top: 30px;
   background-color: lightgreen;
   margin-bottom: 10px;
 }
 
-/* Ejemplo 2: Colapso padre-hijo */
-/*
-  parent margin-bottom: 40px
-  child margin-top: 30px
-  Resultado: Solo se aplica el mayor (40px).
-*/
 
 .parent {
   margin-bottom: 40px;
@@ -29,31 +17,24 @@
 }
 
 .child {
-  margin-top: 30px; /* Colapsa con margin-bottom del padre */
+  margin-top: 30px;
   background-color: lightpink;
 }
 
-/* Ejemplo 3: Bloque vacío — márgenes colapsan en uno solo */
 .empty-block {
   margin-top: 20px;
-  margin-bottom: 10px; /* Colapsa con margin-top */
-  height: 0; /* Sin contenido */
+  margin-bottom: 10px;
+  height: 0;
 }
 
 .next-block {
   background-color: lightgray;
 }
 
-/* Ejemplo 4: Prevención del colapso con padding */
-/*
-  El padding-top: 1px crea un borde de colisión.
-  Esto evita que los márgenes colapsen.
-  Resultado: 40px (padre) + 1px (padding) + 30px (hijo) = 71px
-*/
 
 .parent2 {
   margin-top: 40px;
-  padding-top: 1px; /* Evita el colapso */
+  padding-top: 1px;
   background-color: lightyellow;
 }
 
