@@ -56,3 +56,9 @@ body {
 p {
   line-height: 30px; /* Espacio entre líneas */
 }
+
+@media (max-width: 600px) {
+  #email {
+    width: 450px;
+  }
+}
