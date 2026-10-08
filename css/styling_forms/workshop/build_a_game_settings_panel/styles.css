@@ -1,66 +1,60 @@
 * {
-  margin: 0; /* Sin márgenes */
-  padding: 0; /* Sin rellenos */
-  box-sizing: border-box; /* Padding y border dentro del ancho */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100dvh; /* Dynamic Viewport Height */
-  display: grid; /* Grid para centrar */
-  place-items: center; /* Centra horizontal y verticalmente */
-  background-color: #f0f0f0; /* Fondo gris claro */
-  text-align: center; /* Centra el contenido */
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
-/* Tarjeta de configuración */
 .settings-card {
-  max-width: 100%; /* Ancho máximo */
-  height: auto; /* Alto automático */
-  padding: 30px; /* Espacio interno */
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  margin: auto; /* Centrado horizontal */
-  text-align: left; /* Texto alineado a la izquierda */
+  max-width: 100%;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: left;
 }
 
-/* Título centrado */
 h1 {
   text-align: center;
 }
 
-/* Labels: bloque, cursor mano, centrados */
 label {
-  display: block; /* Bloque para ocupar todo el ancho */
-  cursor: pointer; /* Mano al pasar */
-  margin: 8px auto; /* Espacio arriba/abajo, centrado horizontal */
+  display: block;
+  cursor: pointer;
+  margin: 8px auto;
 }
 
-/* Checkbox personalizado: oculta el nativo */
 input[type="checkbox"] {
-  width: 20px; /* Ancho del cuadrado */
-  height: 20px; /* Alto del cuadrado */
-  cursor: pointer; /* Mano al pasar */
-  appearance: none; /* Oculta el checkbox nativo */
-  border: 2px solid #f1be32; /* Borde dorado */
-  border-radius: 4px; /* Esquinas redondeadas */
-  background-color: white; /* Fondo blanco */
-  transition: all 0.3s; /* Transición suave */
-  vertical-align: middle; /* Alineado con el texto */
-  margin-right: 15px; /* Espacio a la derecha */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #f1be32;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
-/* Checked: fondo dorado */
 input[type="checkbox"]:checked {
-  background-color: #f1be32; /* Dorado */
-  border-color: #e2a60d; /* Borde dorado más oscuro */
+  background-color: #f1be32;
+  border-color: #e2a60d;
 }
 
-/* Checked + ::after: palomita blanca con CSS puro */
 input[type="checkbox"]:checked::after {
-  content: "✓"; /* Palomita */
+  content: "✓";
   display: block;
   text-align: center;
   font-weight: bold;
-  color: white; /* Texto blanco */
-  line-height: 20px; /* Centra verticalmente */
+  color: white;
+  line-height: 20px;
 }

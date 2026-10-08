@@ -1,95 +1,86 @@
 * {
-  margin: 0; /* Sin márgenes */
-  padding: 0; /* Sin rellenos */
-  box-sizing: border-box; /* Padding y border dentro del ancho */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #000000; /* Fondo negro */
-  padding: 50px; /* Espacio entre contenido y borde */
+  background-color: #000000;
+  padding: 50px;
 }
 
 h1 {
-  text-align: center; /* Título centrado */
-  color: #00ff41; /* Verde neón */
-  margin-bottom: 30px; /* Espacio abajo */
+  text-align: center;
+  color: #00ff41;
+  margin-bottom: 30px;
 }
 
-/* Contenedor de tarjetas: responsive */
 .feature-card-container {
-  max-width: 600px; /* Ancho máximo en desktop */
-  width: 100%; /* Se adapta al contenedor padre */
-  margin: 0 auto; /* Centrado horizontal */
-  padding: 10px; /* Espacio interno */
-  border: 3px solid #00ff41; /* Borde verde neón */
-  border-radius: 20px; /* Esquinas redondeadas */
-  font-size: 0; /* TRUCO: Elimina espacio en blanco entre inline-block */
-  background-color: #0a0d0a; /* Fondo muy oscuro */
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 3px solid #00ff41;
+  border-radius: 20px;
+  font-size: 0;
+  background-color: #0a0d0a;
 }
 
-/* Hover del contenedor: sombra verde */
 .feature-card-container:hover {
   box-shadow: 0 0 20px #00ff41;
 }
 
-/* Tarjeta: inline-block para 2 columnas */
 .feature-card {
-  display: inline-block; /* Tarjetas en fila */
-  vertical-align: top; /* Alineación por la parte superior */
-  width: calc(50% - 20px); /* 2 columnas: 50% - margen */
-  margin: 10px; /* Espacio alrededor */
-  padding: 20px; /* Espacio interno */
-  border: 2px solid #133913; /* Borde verde oscuro */
-  border-radius: 12px; /* Esquinas redondeadas */
-  transition: 0.3s ease; /* Transición suave */
-  font-size: 16px; /* Restaura tamaño de fuente */
-  min-height: 150px; /* Altura mínima */
-  cursor: pointer; /* Mano al pasar */
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #133913;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  font-size: 16px;
+  min-height: 150px;
+  cursor: pointer;
 }
 
-/* Hover de tarjeta: borde + sombra verde + escala */
 .feature-card:hover {
   border-color: #00dd88;
   box-shadow: 0 0 8px #00dd88;
   transform: scale(1.05);
 }
 
-/* Título de la tarjeta */
 .feature-card .heading {
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #7c3aed; /* Púrpura */
+  color: #7c3aed;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-/* Descripción de la tarjeta */
 .feature-card p {
   margin: 0;
-  color: #ffb000; /* Naranja */
+  color: #ffb000;
   font-size: 0.9rem;
 }
 
-/* Checkbox personalizado */
 .feature-card-container input[type="checkbox"] {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  appearance: none; /* Oculta el nativo */
-  border: 2px solid #00ff41; /* Borde verde neón */
+  appearance: none;
+  border: 2px solid #00ff41;
   border-radius: 4px;
   background-color: white;
   transition: all 0.3s;
 }
 
-/* Checkbox marcado: fondo oscuro + borde verde brillante */
 .feature-card-container input[type="checkbox"]:checked {
   background-color: #0d1b2a;
   border-color: #00ff88;
   box-shadow: 0 0 8px #00ff88;
 }
 
-/* Palomita blanca con CSS puro */
 .feature-card-container input[type="checkbox"]:checked::after {
   content: "✓";
   display: block;
@@ -99,13 +90,12 @@ h1 {
   line-height: 20px;
 }
 
-/* Móviles: ≤ 480px — 1 columna */
 @media (max-width: 480px) {
   body {
-    padding: 20px; /* Reduce padding en móvil */
+    padding: 20px;
   }
 
   .feature-card {
-    width: calc(100% - 20px); /* 1 columna */
+    width: calc(100% - 20px);
   }
 }
