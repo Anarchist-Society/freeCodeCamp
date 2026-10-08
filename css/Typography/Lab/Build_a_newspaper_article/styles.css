@@ -1,10 +1,9 @@
 html {
-  font-size: 24px; /* Base para rem */
-  background-color: mintcream; /* Fondo verde claro */
+  font-size: 24px;
+  background-color: mintcream;
   padding-top: 100px;
 }
 
-/* Artículo de periódico: centrado, fondo blanco, sombra */
 .newspaper {
   font-family: "Open Sans", sans-serif;
   max-width: 800px;
@@ -15,7 +14,6 @@ html {
   font-size: 16px;
 }
 
-/* Nombre del periódico: serif, mayúsculas */
 .name {
   font-family: "Times New Roman", serif;
   font-size: 2rem;
@@ -24,14 +22,12 @@ html {
   margin-bottom: 10px;
 }
 
-/* Fecha */
 .date {
   font-size: 1em;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Titular: grande, bold */
 .headline {
   font-size: 2em;
   font-weight: bold;
@@ -39,7 +35,6 @@ html {
   margin-bottom: 10px;
 }
 
-/* Subtitular: cursiva, delgado */
 .sub-headline {
   font-size: 1.5em;
   font-style: italic;
@@ -48,7 +43,6 @@ html {
   margin-bottom: 15px;
 }
 
-/* Autor: mayúsculas, bold */
 .author {
   font-size: 1em;
   text-transform: uppercase;
@@ -56,7 +50,6 @@ html {
   margin-bottom: 20px;
 }
 
-/* Párrafos del artículo: sangría + interlineado amplio */
 .text {
   text-indent: 20px;
   font-size: 1em;
@@ -64,7 +57,6 @@ html {
   margin-bottom: 15px;
 }
 
-/* Primera letra: grande y bold (estilo drop cap) */
 .text::first-letter {
   font-weight: bold;
   font-size: 2em;
