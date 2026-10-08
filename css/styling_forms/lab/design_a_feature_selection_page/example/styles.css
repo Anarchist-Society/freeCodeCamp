@@ -5,6 +5,10 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  text-align: center;
+}
+
 .feature-card-container {
   display: flex;
   flex-wrap: wrap;
