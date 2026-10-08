@@ -1,35 +1,26 @@
-/* VARIABLES */
 :root {
-  /* Sky */
   --color-sky-light: #87ceeb;
 
-  /* House */
   --color-house-body: #1e1e2e;
   --color-house-border: #1793d1;
 
-  /* Roof */
   --color-roof-tile: #2a2a3a;
   --color-roof-fill: #242433;
   --color-roof-solid: #0f172a;
 
-  /* Chimney */
   --color-chimney-light: #6b7280;
   --color-chimney-dark: #374151;
 
-  /* Window */
   --color-window-frame: #1793d1;
   --color-window-dark: #0d1117;
 
-  /* Door */
   --color-door: #111827;
   --color-door-knob: #facc15;
 
-  /* Welcome sign */
   --color-welcome-sign: #1793d1;
   --color-welcome-text: #ffffff;
 }
 
-/* GLOBAL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +63,6 @@ img {
   z-index: -1;
 }
 
-/* HOUSE */
 #house {
   flex: 0 0 auto;
   width: 500px;
@@ -135,7 +125,6 @@ img {
   transform: rotate(170deg);
 }
 
-/* CHIMNEY */
 #chimney {
   width: 90px;
   height: 100px;
@@ -152,7 +141,6 @@ img {
   border: 2px solid var(--color-chimney-light);
 }
 
-/* ROOF */
 #roof {
   width: 100%;
   height: 110px;
@@ -176,7 +164,6 @@ img {
   border: 2px;
 }
 
-/* WINDOWS */
 #window-1,
 #window-2 {
   width: 100px;
@@ -237,7 +224,6 @@ img {
   object-fit: contain;
 }
 
-/* DOOR */
 #door {
   width: 130px;
   height: 180px;
