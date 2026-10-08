@@ -12,18 +12,11 @@
     <main>
       <h1>Audio Controls</h1>
 
-      <!-- type="button": Botón que NO envía formularios (sin type = submit por defecto) -->
       <button type="button">Play</button>
 
       <div>
-        <!-- aria-labelledby: Asocia el input con múltiples labels descriptivos -->
         <span id="volume-label">Volume</span>
         <span id="volume-description">Adjust the sound level</span>
-        <!--
-          type="range": Slider deslizante.
-          - min/max/value: Rango y valor inicial.
-          - aria-labelledby: El lector de pantalla lee "Volume, Adjust the sound level, slider, 50%"
-        -->
         <input
           type="range"
           min="0"

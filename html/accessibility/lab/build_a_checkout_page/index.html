@@ -12,7 +12,6 @@
     <main>
       <h1>Checkout</h1>
 
-      <!-- Sección del carrito -->
       <section>
         <h2>Your Cart</h2>
         <img
@@ -23,11 +22,9 @@
         <p>9.49€</p>
       </section>
 
-      <!-- Sección de pago -->
       <section>
         <h2>Payment Information</h2>
         <form>
-          <!-- aria-hidden="true": Oculta el asterisco decorativo de los lectores de pantalla -->
           <label for="card-name"
             >Cardholder name <span aria-hidden="true">*</span></label
           >
@@ -36,7 +33,6 @@
           <label for="card-number"
             >Card Number <span aria-hidden="true">*</span></label
           >
-          <!-- aria-describedby: Asocia el input con una descripción adicional -->
           <input
             type="text"
             id="card-number"
@@ -44,7 +40,7 @@
             aria-describedby="card-number-help"
             required
           />
-          <!-- Descripción asociada con aria-describedby -->
+
           <p id="card-number-help">
             Please enter your 16-digit card number without spaces or dashes.
           </p>
@@ -52,7 +48,6 @@
           <label for="expiry-date"
             >Expire Date <span aria-hidden="true">*</span></label
           >
-          <!-- placeholder: Texto de ejemplo que desaparece al escribir -->
           <input
             type="text"
             id="expiry-date"
@@ -62,7 +57,6 @@
           />
 
           <label for="cvv">CVV <span aria-hidden="true">*</span></label>
-          <!-- aria-label: Nombre accesible alternativo (cuando el label es corto) -->
           <input
             type="text"
             id="cvv"

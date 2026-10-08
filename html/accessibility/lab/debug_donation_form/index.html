@@ -11,25 +11,19 @@
   <body>
     <main>
       <h1>Donation Form</h1>
-      <!-- Formulario de donación: label + input para cada campo -->
       <form>
-        <!-- for="name" conecta con id="name": Accesibilidad + clic en label = focus -->
         <label for="name">Full Name:</label>
         <input id="name" type="text" name="name" required />
 
-        <!-- type="email": Valida formato email automáticamente -->
         <label for="email">Email Address:</label>
         <input id="email" type="email" name="email" required />
 
-        <!-- type="number": Solo acepta números -->
         <label for="donation">Donation Amount ($):</label>
         <input id="donation" type="number" name="amount" required />
 
-        <!-- Checkbox opcional (sin required) -->
         <label for="subscription">Subscribe</label>
         <input id="subscription" type="checkbox" name="newsletter" />
 
-        <!-- <input type="submit">: Método antiguo. <button> es más flexible -->
         <input type="submit" value="Send" />
       </form>
     </main>
