@@ -44,7 +44,6 @@ img {
   position: absolute;
   right: 30px;
   top: 30px;
-  opacity: 0.5;
 }
 
 #tux-and-gnu {
@@ -229,7 +228,7 @@ img {
   height: 180px;
   position: absolute;
   bottom: 0;
-  left: 185px;
+  left: 180px;
   transform: translateY(6px);
   background-color: var(--color-door);
   border: 6px solid var(--color-door-knob);
@@ -243,4 +242,19 @@ img {
   right: 5%;
   border-radius: 50%;
   background-color: var(--color-door-knob);
+}
+
+@media (max-width: 600px) {
+  #house {
+    width: 400px;
+    height: 300px;
+  }
+
+  #door {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 145px;
+  }
 }

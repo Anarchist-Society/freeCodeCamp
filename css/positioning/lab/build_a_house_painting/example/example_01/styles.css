@@ -135,3 +135,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 600px) {
+  #house {
+    width: 400px;
+    height: 300px;
+  }
+
+  #door {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 145px;
+  }
+}
