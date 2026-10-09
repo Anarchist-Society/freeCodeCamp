@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anarchist-Society" />
+    <meta name="description" content="Ejemplo de FreeCodeCamp" />
+    <title>Attribute Selector</title>
+    <style>
+      a {
+        display: block;
+      }
+
+      a[href] {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      a[title] {
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a[href][title] {
+        display: block;
+        color: green;
+      }
+
+      a[class~="primary"] {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <a href="https://example.com">Example link with an href attribute</a>
+      <a>Example link without an href attribute</a>
+      <a href="https://example.com" title="Example link with a title attribute"
+        >Example link with a title attribute</a
+      >
+      <a>Example link without a title or href attribute</a>
+      <a href="https://example.com" title="Example link with a title attribute"
+        >Example link with a title attribute</a
+      >
+      <a>Example link without a title or href attribute</a>
+      <a href="https://example.com" class="btn primary large"
+        >Visit Example Site</a
+      >
+      <a href="https://example.com" class="btn primary large"
+        >Visit Example Site</a
+      >
+    </main>
+  </body>
+</html>
