@@ -128,3 +128,13 @@ tbody :last-child td {
     var(--color5) 83% 100%
   );
 }
+
+@media (max-width: 600px) {
+  table {
+    width: 25rem;
+  }
+
+  th {
+    font-size: 12px;
+  }
+}
