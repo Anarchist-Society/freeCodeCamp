@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anarchist-Society" />
+    <meta name="description" content="Ejemplo de FreeCodeCamp" />
+    <title>Responsive Web Design with Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .grid-item {
+        background-color: black;
+        color: white;
+      }
+
+      @media (min-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .grid-container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+      </div>
+    </main>
+  </body>
+</html>
