@@ -51,24 +51,20 @@ h2,
 }
 
 .contenedor-galvan {
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
 }
 
 .boton {
   padding: 0 20px;
-  height: 44px;
+  height: 50px;
   font-family: "Orbitron", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
-  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--negro);
   background: var(--verde);
   border: 2px solid var(--verde-neon);
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   transition:
     background 0.25s ease,
@@ -82,7 +78,7 @@ h2,
 }
 
 .boton:active {
-  transform: translateY(1px);
+  transform: translateY(5px);
 }
 
 header#header {
@@ -92,11 +88,11 @@ header#header {
   right: 0;
   z-index: 100;
   min-height: 80px;
-  padding: 8px 24px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   background: rgba(10, 12, 10, 0.92);
   border-bottom: 3px solid var(--verde);
   box-shadow: 0 0 20px rgba(122, 201, 67, 0.35);
@@ -118,23 +114,22 @@ header#header {
 }
 
 #nav-bar {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #nav-bar > ul {
   display: flex;
-  flex-direction: row;
-  gap: 8px;
+  gap: 20px;
 }
 
 #nav-bar .nav-link {
   display: inline-block;
-  padding: 8px 14px;
+  padding: 10px;
   font-size: 0.85em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--gris);
-  border-radius: 4px;
+  color: whitesmoke;
+  border-radius: 5px;
   transition:
     color 0.2s ease,
     background 0.2s ease;
@@ -148,27 +143,24 @@ header#header {
 #inicio-heroe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   gap: 20px;
-  max-width: 1000px;
-  margin: 24px auto 0;
-  padding: 48px 16px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 #inicio-heroe h1 {
   font-size: clamp(1.5rem, 4vw, 2.6rem);
   color: #fff;
   text-shadow: 0 0 12px rgba(166, 255, 31, 0.6);
-  word-wrap: break-word;
 }
 
 #form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 30px;
   width: 100%;
 }
 
@@ -179,7 +171,7 @@ header#header {
   color: #fff;
   background: var(--carbon);
   border: 2px solid var(--borde);
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
   transition:
     border-color 0.2s ease,
@@ -201,10 +193,11 @@ header#header {
 }
 
 #habilidades {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 40px;
+  margin: 0 auto;
 }
 
 .bloque {
@@ -320,6 +313,7 @@ header#header {
 
 .reloj > ol > li {
   padding: 6px 12px;
+  text-align: left;
 }
 
 .reloj > ol > li::before {
@@ -336,7 +330,7 @@ footer {
   padding: 24px;
   background: var(--carbon);
   border-top: 3px solid var(--verde);
-  border-radius: 8px 8px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 footer > ul {
@@ -354,10 +348,6 @@ footer > span {
 }
 
 @media (max-width: 720px) {
-  body {
-    padding-top: 150px;
-  }
-
   header#header {
     flex-wrap: wrap;
     justify-content: center;
@@ -374,23 +364,13 @@ footer > span {
     justify-content: center;
   }
 
-  #relojes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reloj {
-    width: 100%;
-    max-width: 340px;
+  #habilidades {
+    width: auto;
   }
 }
 
 @media (max-width: 550px) {
-  .icono {
-    display: none;
-  }
-
   .descripcion {
-    text-align: center;
+    text-align: left;
   }
 }
